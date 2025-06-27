@@ -14,7 +14,7 @@ Su objetivo es ofrecer una alternativa cómoda, moderna y eficaz a los sistemas 
 
 ## 🛠️ Tecnologías utilizadas
 
-- React Native
+- Kotlin
 - Firebase (Firestore)
 - Android Studio
 - Git / GitHub
