@@ -1,11 +1,11 @@
 # AppReservaCitas
 
-**AppReservaCitas** es una aplicación móvil desarrollada en Android, pensada para facilitar la reserva de citas de forma rápida, intuitiva y desde cualquier lugar. 
+**AppReservaCitas** es una aplicación móvil desarrollada en Android que forma parte del sistema de gestión de citas de *Peluditos & Felices*, junto con la app para propietarios `AppGestionReservaCitas`.
 
-Pensada específicamente para clientes de peluquerías caninas, esta app les permite solicitar cita de forma sencilla y autónoma, sin necesidad de realizar llamadas ni enfrentarse a procesos complicados
+Está diseñada para clientes de peluquerías caninas que desean solicitar cita de forma rápida, sencilla y sin necesidad de realizar llamadas.  
+Ofrece una experiencia intuitiva y accesible desde cualquier lugar, permitiendo consultar disponibilidad, elegir un servicio y completar la reserva con todos los datos necesarios.
 
-La app ofrece una experiencia clara y sencilla, permitiendo a los usuarios consultar disponibilidad, seleccionar el servicio que desean y completar la reserva con todos los datos necesarios.  
-Su objetivo es ofrecer una alternativa cómoda, moderna y eficaz a los sistemas tradicionales de gestión de citas.
+Su objetivo es proporcionar una alternativa moderna y eficiente a los métodos tradicionales de gestión de citas.
 
 ---
 
@@ -21,10 +21,10 @@ Su objetivo es ofrecer una alternativa cómoda, moderna y eficaz a los sistemas 
 
 ## 🛠️ Tecnologías utilizadas
 
-- Kotlin
-- Firebase (Firestore)
-- Android Studio
-- Git / GitHub
+- **Kotlin**
+ **Firebase (Firestore)**
+- **Android Studio**
+- **Git / GitHub**
 
 Además, toda la lógica de negocio está desarrollada desde cero, incluyendo la validación de datos, la gestión de disponibilidad horaria y el sistema de confirmación.
 
