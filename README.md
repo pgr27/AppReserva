@@ -1,7 +1,8 @@
 # AppReservaCitas
 
-**AppReservaCitas** es una aplicación móvil desarrollada en Android, pensada para facilitar la reserva de citas de forma rápida, intuitiva y desde cualquier lugar.  
-Está diseñada para clientes que necesitan pedir cita en negocios como peluquerías caninas, centros de estética, veterinarios, etc., sin necesidad de llamadas ni complicaciones.
+**AppReservaCitas** es una aplicación móvil desarrollada en Android, pensada para facilitar la reserva de citas de forma rápida, intuitiva y desde cualquier lugar. 
+
+Pensada específicamente para clientes de peluquerías caninas, esta app les permite solicitar cita de forma sencilla y autónoma, sin necesidad de realizar llamadas ni enfrentarse a procesos complicados
 
 La app ofrece una experiencia clara y sencilla, permitiendo a los usuarios consultar disponibilidad, seleccionar el servicio que desean y completar la reserva con todos los datos necesarios.  
 Su objetivo es ofrecer una alternativa cómoda, moderna y eficaz a los sistemas tradicionales de gestión de citas.
