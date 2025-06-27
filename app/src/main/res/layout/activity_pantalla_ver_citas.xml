@@ -1,0 +1,90 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink">
+
+    <!-- Layout superior -->
+    <LinearLayout
+        android:id="@+id/layout_superior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <!-- Barra superior -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/purple"
+            android:gravity="center_vertical">
+
+            <!-- Botón Volver -->
+            <ImageButton
+                android:id="@+id/ButtonVolver"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:contentDescription="Volver"
+                android:src="@drawable/flecha_atras" />
+
+            <!-- Título -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mis citas"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Barra verde -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/green" />
+
+        <!-- Sección de búsqueda -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/editTextDNI"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Introduce tu DNI"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/buttonConsultar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple"
+                android:text="Consultar citas" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <!-- RecyclerView para el contenido central -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCitas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/pink"
+            app:layout_constraintTop_toBottomOf="@id/layout_superior"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:listitem="@layout/item_cita" />
+</androidx.constraintlayout.widget.ConstraintLayout>

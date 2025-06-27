@@ -1,0 +1,66 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/pink">
+
+    <!-- Layout superior -->
+    <LinearLayout
+        android:id="@+id/layout_superior"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Barra morada -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/purple">
+
+            <!-- Botón Volver -->
+            <ImageButton
+                android:id="@+id/ButtonVolver"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:contentDescription="Volver"
+                android:src="@drawable/flecha_atras" />
+            <!-- Título -->
+            <TextView
+                android:id="@+id/TituloOfertas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="OFERTAS"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- Barra verde -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/green" />
+    </LinearLayout>
+
+    <!-- RecyclerView para el contenido central -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewOfertas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/pink"
+        app:layout_constraintTop_toBottomOf="@id/layout_superior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_oferta" />
+</androidx.constraintlayout.widget.ConstraintLayout>

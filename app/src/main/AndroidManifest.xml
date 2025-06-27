@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <queries>
+        <!-- Consulta para Google Maps -->
+        <package android:name="com.google.android.apps.maps" />
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="geo" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+            <data android:scheme="tel" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PeluditosFelices"
+        tools:targetApi="31">
+
+        <!-- Pantalla Inicio -->
+        <activity
+            android:name=".PantallaInicio"
+            android:exported="true"
+            android:theme="@style/Theme.PeluditosFelices">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Pantalla Menú -->
+        <activity
+            android:name=".Pantalla_Menu"
+            android:exported="false" />
+
+        <!-- Pantalla Servicios -->
+        <activity
+            android:name=".pantallaServicios"
+            android:exported="false" />
+
+        <!-- Pantalla Fecha y Hora -->
+        <activity
+            android:name=".PantallaFyH"
+            android:exported="false" />
+
+        <!-- Pantalla Ver Cita -->
+        <activity
+            android:name=".PantallaVerCitas"
+            android:exported="false" />
+
+        <!-- Pantalla Contacto -->
+        <activity
+            android:name=".PantallaContacto"
+            android:exported="false" />
+
+        <!-- Pantalla Ofertas -->
+        <activity
+            android:name=".PantallaOfertas"
+            android:exported="true" />
+
+        <!-- Actividad principal -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PeluditosFelices" />
+    </application>
+
+</manifest>

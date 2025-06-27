@@ -1,0 +1,100 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/green"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce los siguientes datos para reservar la cita"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Nombre y Apellidos -->
+    <EditText
+        android:id="@+id/InpuDNI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DNI"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="8dp" />
+    <EditText
+        android:id="@+id/InputNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="8dp" />
+    <EditText
+        android:id="@+id/InputApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellidos"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Nombre de la Mascota -->
+    <EditText
+        android:id="@+id/InputMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la Mascota"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Raza -->
+    <EditText
+        android:id="@+id/InputRaza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Raza"
+        android:inputType="text"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Teléfono -->
+    <EditText
+        android:id="@+id/InputTlfn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono"
+        android:inputType="phone"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Día y hora -->
+    <TextView
+        android:id="@+id/TextFyH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Día y hora:"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Servicio y precio -->
+    <TextView
+        android:id="@+id/TextServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servicio:"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Botón Reservar -->
+    <Button
+        android:id="@+id/ButtonReservarCita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple"
+        android:text="Reservar Cita"
+        android:textColor="@android:color/white" />
+</LinearLayout>

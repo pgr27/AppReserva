@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".Pantalla_Menu">
+
+    <!-- Barra morada superior -->
+    <LinearLayout
+        android:id="@+id/layout_superior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/purple"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/TituloMenu"
+            android:layout_width="473dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Menú"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Barra verde -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/layout_superior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Logo central -->
+    <ImageView
+        android:id="@+id/LogoPyF"
+        android:layout_width="219dp"
+        android:layout_height="233dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Logo Peluditos y felices"
+        android:src="@drawable/your_pet_care"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_superior" />
+
+    <!-- Botones principales -->
+    <GridLayout
+        android:id="@+id/grid_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        app:layout_constraintTop_toBottomOf="@id/LogoPyF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/ButtonReservar"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/purple"
+            android:text="Reservar"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/ButtonMisCitas"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/purple"
+            android:text="Mis citas"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/ButtonOfertas"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/purple"
+            android:text="Ofertas"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/ButtonContacto"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/purple"
+            android:text="Contacto"
+            android:textColor="@android:color/white" />
+    </GridLayout>
+
+    <!-- Imagen inferior -->
+    <ImageView
+        android:id="@+id/ImagenPerro1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imagen_perro1"
+        app:layout_constraintTop_toBottomOf="@id/grid_buttons"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

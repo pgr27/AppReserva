@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.PeluditosFelices" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Personalización del tema -->
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/purple</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="android:windowBackground">@color/pink</item>
+    </style>
+
+</resources>

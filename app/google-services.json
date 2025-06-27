@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "608530533404",
+    "project_id": "peluditosfelices-ed27a",
+    "storage_bucket": "peluditosfelices-ed27a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608530533404:android:3cc40bdff1a8a20c3fe3d9",
+        "android_client_info": {
+          "package_name": "com.example.peluditosfelices"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDurxxVg0iNsacRIrqw2W3W14pk8VsQwVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

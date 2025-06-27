@@ -1,0 +1,216 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDFFE">
+
+    <!-- Layout superior -->
+    <LinearLayout
+        android:id="@+id/layout_superior"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Barra morada -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#cb6ce6"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Botón Volver -->
+            <ImageButton
+                android:id="@+id/ButtonVolver"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Volver"
+                android:scaleType="fitCenter"
+                android:src="@drawable/flecha_atras" />
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/TituloContacto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Contacto"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Barra verde -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#D4FF00" />
+    </LinearLayout>
+
+    <!-- Layout central -->
+    <LinearLayout
+        android:id="@+id/layout_central"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFDFFE"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/layout_inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_superior">
+
+        <!-- Icono central -->
+        <ImageView
+            android:id="@+id/LogoPyF"
+            android:layout_width="250dp"
+            android:layout_height="295dp"
+            android:background="#FFDFFE"
+            android:contentDescription="Logo Peluditos y felices"
+            android:src="@drawable/your_pet_care" />
+    </LinearLayout>
+
+    <!-- Layout inferior -->
+    <LinearLayout
+        android:id="@+id/layout_inferior"
+        android:layout_width="410dp"
+        android:layout_height="383dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Primer Campo: Dirección y Teléfono -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="138dp"
+            android:layout_marginBottom="16dp"
+            android:background="#caff17"
+            android:elevation="2dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Información de contacto -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDireccionContacto"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Direccion"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvTelefonoContacto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Telefono (Nombre)"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Botones de contacto -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/ButtonUbicacion"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Abrir Ubicación"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/descarga__1_" />
+
+                <ImageButton
+                    android:id="@+id/ButtonTelefono"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Llamar Teléfono"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sin_t_tulo" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Segundo Campo: Horario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#caff17"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Título Horario -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:text="Horario:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Lunes a Viernes -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Lunes a Viernes:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvHorarioLV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Sábados -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sábados:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvHorarioS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
